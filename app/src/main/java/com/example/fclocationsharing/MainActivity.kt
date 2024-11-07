@@ -1,5 +1,6 @@
 package com.example.fclocationsharing
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.enableEdgeToEdge
@@ -24,5 +25,6 @@ class MainActivity : AppCompatActivity() {
 
         Log.d("MainActivity", keyhash.toString())
 
+        startActivity(Intent(this, LoginActivity::class.java))
     }
 }
